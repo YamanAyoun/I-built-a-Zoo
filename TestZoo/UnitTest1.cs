@@ -34,5 +34,20 @@ namespace TestZoo
             Marine fish = new Fish();
             Assert.Equal("Fish is Eating", fish.Eat());
         }
+
+        [Fact]
+        public void TestIMove()
+        {
+            Cat Cat = new Cat();
+            Assert.Equal("Cat is move four feet", Cat.movementStyle());
+        }
+
+        [Fact]
+        public void TestIBreed()
+        {
+            Cat cat = new Cat();
+            Assert.Equal("Cat is Breed", cat.Breed());
+        }
+
     }
 }

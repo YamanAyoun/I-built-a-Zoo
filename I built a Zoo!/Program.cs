@@ -1,5 +1,7 @@
 ﻿using I_built_a_Zoo_.Classes.Animal.FlyingAnimal;
 using I_built_a_Zoo_.Classes.Animal.MammalAnimal;
+using I_built_a_Zoo_.Classes.Animal.MarineAnimal;
+using I_built_a_Zoo_.Classes.Animal.PetAnimal;
 
 namespace I_built_a_Zoo_
 {
@@ -17,6 +19,13 @@ namespace I_built_a_Zoo_
             Mammal Lion=new Lion();
             Console.WriteLine(Lion.Eat());
             Lion.Danger();
+
+            Fish fish = new Fish();
+            fish.movementStyle();
+
+            Cat cat = new Cat();
+            cat.movementStyle();
+            cat.Breed();
             
         }
     }
