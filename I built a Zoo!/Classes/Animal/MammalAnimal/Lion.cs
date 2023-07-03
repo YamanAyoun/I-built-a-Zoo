@@ -1,4 +1,5 @@
-﻿using System;
+﻿using I_built_a_Zoo_.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace I_built_a_Zoo_.Classes.Animal.MammalAnimal
 {
-    public class Lion : Mammal
+    public class Lion : Mammal, IBreed
     {
         public override string Eat()
         {
@@ -24,6 +25,11 @@ namespace I_built_a_Zoo_.Classes.Animal.MammalAnimal
         public override void Danger()
         {
             Console.WriteLine("Lion is Danger!");
+        }
+
+        public string Breed()
+        {
+            return "Lion is Breed";
         }
     }
 }
